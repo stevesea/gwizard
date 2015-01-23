@@ -9,12 +9,14 @@ import lombok.EqualsAndHashCode;
  *
  * depends on gwizard-services
  */
-@EqualsAndHashCode(of={})	// makes installation of this module idempotent
+@EqualsAndHashCode(of={}, callSuper = false)	// makes installation of this module idempotent
 public class PeriodicHealthCheckModule extends AbstractModule {
 
 	@Override
 	protected void configure() {
+		// requirements on other modules
 		install(new ServicesModule());
+		install(new HealthChecksModule());
 
 		bind(PeriodicHealthCheckService.class).asEagerSingleton();
 	}

@@ -20,6 +20,7 @@
 		<module>gwizard-hibernate</module>
 		<module>gwizard-healthchecks</module>
 		<module>gwizard-metrics</module>
+		<module>gwizard-spi</module>
 	</modules>
 
 	<properties>
@@ -36,6 +37,7 @@
 		<metrics.version>3.1.0</metrics.version>
 		<metricsguice.version>3.1.3</metricsguice.version>
 		<dropwizard.version>0.7.1</dropwizard.version>
+		<google.auto.service.version>1.0-rc2</google.auto.service.version>
 	</properties>
 
 	<scm>

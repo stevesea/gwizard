@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.voodoodyne.gwizard</groupId>
+		<artifactId>gwizard-parent</artifactId>
+		<version>0.5-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>gwizard-spi</artifactId>
+	<name>GWizard SPI</name>
+	<packaging>jar</packaging>
+
+	<dependencies>
+
+		<!-- used for SPI metadata generation -->
+		<dependency>
+			<groupId>com.google.auto.service</groupId>
+			<artifactId>auto-service</artifactId>
+			<version>${google.auto.service.version}</version>
+			<optional>true</optional>
+		</dependency>
+
+
+		<!-- Test deps -->
+		<dependency>
+			<groupId>com.voodoodyne.gwizard</groupId>
+			<artifactId>gwizard-services</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.voodoodyne.gwizard</groupId>
+			<artifactId>gwizard-metrics</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.voodoodyne.gwizard</groupId>
+			<artifactId>gwizard-healthchecks</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
