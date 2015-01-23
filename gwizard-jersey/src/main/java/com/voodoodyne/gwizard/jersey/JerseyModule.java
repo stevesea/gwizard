@@ -20,7 +20,7 @@ import java.lang.reflect.Type;
 /**
  */
 @Slf4j
-@EqualsAndHashCode(of={})	// makes installation of this module idempotent
+@EqualsAndHashCode(of={}, callSuper = false)	// makes installation of this module idempotent
 public class JerseyModule extends ServletModule {
 
 	@Override

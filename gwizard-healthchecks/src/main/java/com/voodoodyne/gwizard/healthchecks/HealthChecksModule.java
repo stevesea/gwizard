@@ -6,7 +6,7 @@ import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import lombok.EqualsAndHashCode;
 
-@EqualsAndHashCode(of={})	// makes installation of this module idempotent
+@EqualsAndHashCode(of={}, callSuper = false)	// makes installation of this module idempotent
 public class HealthChecksModule extends AbstractModule {
 
 	@Override
