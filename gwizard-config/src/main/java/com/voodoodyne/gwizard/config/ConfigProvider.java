@@ -33,6 +33,7 @@ public class ConfigProvider<T> implements Provider<T> {
 		this.configFile = configFile;
 	}
 
+	@SuppressWarnings("unchecked")
 	public T get() {
 		if (!configFile.exists())
 			throw new IllegalStateException("No such config file " + configFile);

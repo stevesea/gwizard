@@ -18,6 +18,7 @@ import java.io.IOException;
  * Self-contained example of using the WebModule by itself.
  */
 public class WebModuleExample {
+	@SuppressWarnings("serial")
 	@Singleton
 	public static class HelloServlet extends HttpServlet {
 		@Override

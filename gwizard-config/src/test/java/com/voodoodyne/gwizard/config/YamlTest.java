@@ -10,6 +10,7 @@ import static org.hamcrest.Matchers.nullValue;
 public class YamlTest {
 
 	//@Test
+	@SuppressWarnings("unchecked")
 	public void readYamlNull() throws Exception {
 		ObjectMapper mapper = new ObjectMapper();
 		YAMLFactory yamlFactory = new YAMLFactory();

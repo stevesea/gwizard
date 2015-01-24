@@ -26,6 +26,7 @@ public class ConfigModule extends AbstractModule {
 		this(configFile, configClass, "gw");
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	protected void configure() {
 		// Binding a dynamic class is surprisingly complicated
